@@ -1,0 +1,28 @@
+.App {
+    background-color: rgb(217, 205, 220);
+    margin: 0;
+    width: 100%;
+}
+
+.botones {
+    color: black;
+    font-size: 20px;
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.nav {
+    display: flex;
+    flex: column;
+}
+
+.botones:hover {
+    color: rgb(137, 135, 141);
+}
+
+.foto {
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
