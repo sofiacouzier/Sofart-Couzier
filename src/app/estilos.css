@@ -1,7 +1,11 @@
 .App {
-    background-color: rgb(217, 205, 220);
     margin: 0;
     width: 100%;
+}
+
+.info {
+    margin: 20px;
+    margin-top: 35px;
 }
 
 .botones {
@@ -25,4 +29,19 @@
     width: 50px;
     border-radius: 50px;
     margin: 10px;
+}
+
+.carrito {
+    background-color: aliceblue;
+    padding: 3px;
+    margin-right: 3px;
+}
+
+.botonCarrito {
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.carrito:hover {
+    padding: 0;
 }
