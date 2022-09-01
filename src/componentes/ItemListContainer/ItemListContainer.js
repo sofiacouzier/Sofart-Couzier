@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ItemListConteiner = ({ productos }) => {
+const ItemListContainer = ({ productos }) => {
     return (
         <div>
             <h2 className='info'>Hola, bienvenido! En el dia de hoy contamos con {productos} productos a la venta
@@ -9,4 +9,4 @@ const ItemListConteiner = ({ productos }) => {
     )
 }
 
-export default ItemListConteiner
+export default ItemListContainer
