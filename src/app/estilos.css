@@ -45,3 +45,29 @@
 .carrito:hover {
     padding: 0;
 }
+
+.stock {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    margin-top: 70px;
+}
+
+.sumar {
+    margin: 10px;
+    background-color: rgb(73, 72, 72);
+    border-radius: 10px;
+    border-style: groove;
+    color: aliceblue;
+}
+
+.hola {
+    margin: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.carritoBoton {
+    margin-left: 40px;
+    border-radius: 10px;
+}
