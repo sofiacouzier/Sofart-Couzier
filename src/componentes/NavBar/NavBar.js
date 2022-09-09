@@ -3,11 +3,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
+
 function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <img className='foto' src="../img/foto.webp" width={35} alt="" />
+                <img className='foto' src="../IMG/foto.webp" width={35} alt="" />
                 <Navbar.Brand href="#home">Sofart</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

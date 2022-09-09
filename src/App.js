@@ -12,11 +12,9 @@ function App() {
       <header className="App-header">
         <NavBar />
 
-        <ItemListConteiner productos={17} />
+        <ItemListConteiner />
 
-        <Contador Productos={17} />
-
-
+        <Contador productos={17} />
 
       </header>
     </div>
