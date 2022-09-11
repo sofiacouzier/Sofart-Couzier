@@ -9,12 +9,12 @@ const Contador = ({ Productos, inicio, onAdd }) => {
                 <button className='sumar' onClick={() => {
                     inicio = 0
                     setValor(valor - 1)
-                    valor > inicio ? setValor(valor - 1) : setValor(inicio)
-                }}>-</button>
+                    console.log(Productos)
+                }} disabled={valor < 1}>-</button>
                 <p className='hola'>{valor}</p>
                 <button className='sumar' onClick={() => {
-                    valor < Productos ? setValor(valor + 1) : setValor(Productos)
-                }}>+</button>
+                    setValor(valor + 1)
+                }} disabled={valor > Productos - 1}>+</button>
 
             </div >
             <button className='carritoBoton' onClick={() => onAdd(valor)}>Añadir al carrito</button>

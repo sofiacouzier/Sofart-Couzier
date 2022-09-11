@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './componentes/NavBar/NavBar';
 import estilos from './app/estilos.css';
 import ItemListConteiner from './componentes/ItemListContainer/ItemListContainer';
-import Contador from './componentes/ItemListContainer/Contador';
 
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
 
         <ItemListConteiner />
 
-        <Contador productos={17} />
 
       </header>
     </div>
