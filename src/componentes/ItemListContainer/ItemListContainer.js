@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import product from './api'
+import product from './productos'
 import ItemList from './ItemList'
 
-const ItemListContainer = ({ productos }) => {
+
+const ItemListContainer = ({ cantidad }) => {
     const getProductos = (confirmacion) => new Promise((res, err) => {
         setTimeout(() => {
             if (confirmacion) {
@@ -24,7 +25,7 @@ const ItemListContainer = ({ productos }) => {
 
     return (
         <div>
-            <h2 className='info'>Hola, bienvenido! En el dia de hoy contamos con {productos} productos a la venta
+            <h2 className='info'>Hola, bienvenido! En el dia de hoy contamos con {cantidad} productos a la venta
             </h2>
 
             <div>

@@ -80,4 +80,14 @@
     display: inline-block;
     border-radius: 10px;
     border-style: groove;
+    margin-left: 13%;
+}
+
+.detalle {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+    margin-left: 35%;
 }

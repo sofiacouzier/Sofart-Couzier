@@ -4,7 +4,7 @@ import Contador from './Contador'
 const Item = ({ id, nombre, precio, stock }) => {
 
     return (
-        <div className='prod' id={id}>
+        < div className='prod' id={id}>
             <h2>
                 {nombre}
             </h2>
