@@ -3,7 +3,8 @@ export const getItem = () => new Promise((res) => {
         {
             nombre: 'mar',
             descripcion: 'cuadro de 50x70cm',
-            stock: '6'
+            stock: '6',
+            precio: '1500'
         }
     ), 2000)
 })
