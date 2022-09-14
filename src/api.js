@@ -1,7 +1,7 @@
 export const getItem = () => new Promise((res) => {
     setTimeout(() => res(
         {
-            nombre: 'mar',
+            nombre: '"Mar", el producto mas comprado',
             descripcion: 'cuadro de 50x70cm',
             stock: '6',
             precio: '1500'

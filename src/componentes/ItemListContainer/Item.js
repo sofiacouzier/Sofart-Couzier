@@ -8,7 +8,7 @@ const Item = ({ id, nombre, precio, stock }) => {
             <h2>
                 {nombre}
             </h2>
-            <p>Precio: {precio}</p >
+            <p>Precio: ${precio}</p >
             <p> Disponibles: {stock} unidades</p>
             <Contador Productos={stock} />
 
