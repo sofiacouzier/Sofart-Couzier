@@ -7,7 +7,7 @@ const Home = () => {
         <div>
 
             <ItemListContainer cantidad={"estos"} />
-            <ItemDetailContainer />
+
 
         </div>
 

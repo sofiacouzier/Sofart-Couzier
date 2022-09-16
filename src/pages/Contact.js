@@ -3,7 +3,10 @@ import NavBar from '../componentes/NavBar/NavBar'
 const Contact = () => {
     return (
         <div>
-            Contactanos en instagam! @Sofart</div>
+            <h1>
+                Contactanos en instagam! @Sofart
+            </h1>
+        </div>
     )
 }
 

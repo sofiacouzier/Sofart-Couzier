@@ -13,7 +13,8 @@ function NavBar() {
                 <img className='foto' src="../IMG/foto.webp" width={35} alt="" />
 
                 <Navbar.Brand href="#home"><Link to='/'>Sofart</Link></Navbar.Brand>
-                <li><Link to={`/product/${id}`}>Cuadros</Link></li>
+                <li><Link to={`/product/${id}`}>Productos</Link></li>
+                <li><Link to='/Item/'>Mas Vendido</Link></li>
                 <li><Link to='/Contact/'>Contacto</Link></li>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
