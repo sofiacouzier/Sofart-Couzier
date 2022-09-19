@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Contador from './Contador'
+import { Link } from 'react-router-dom';
+
+
 
 const Item = ({ id, nombre, precio, stock }) => {
-    const onAdd = param => console.log(param)
+    const [count, setCount] = useState(0);
     return (
         < div className='prod' id={id}>
             <h2>
@@ -10,7 +13,11 @@ const Item = ({ id, nombre, precio, stock }) => {
             </h2>
             <p>Precio: ${precio}</p >
             <p> Disponibles: {stock} unidades</p>
-            <Contador Productos={stock} onAdd={onAdd} />
+            {
+                count == 0 ?
+                    <Contador Productos={stock} onAdd={(c) => { setCount(c) }} />
+                    : <Link to={`/Cart/`}>Comprar</Link>
+            }
 
         </div>
 
