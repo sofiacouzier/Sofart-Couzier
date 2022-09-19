@@ -2,7 +2,7 @@ import React from 'react'
 import Contador from './Contador'
 
 const Item = ({ id, nombre, precio, stock }) => {
-
+    const onAdd = param => console.log(param)
     return (
         < div className='prod' id={id}>
             <h2>
@@ -10,7 +10,7 @@ const Item = ({ id, nombre, precio, stock }) => {
             </h2>
             <p>Precio: ${precio}</p >
             <p> Disponibles: {stock} unidades</p>
-            <Contador Productos={stock} />
+            <Contador Productos={stock} onAdd={onAdd} />
 
         </div>
 

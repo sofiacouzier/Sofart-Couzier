@@ -4,6 +4,9 @@ import Contact from '../pages/Contact';
 import { Layout } from './Layout';
 import ItemListContainer from '../componentes/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../componentes/itemDetailConteiner/ItemDetailContainer';
+import Cart from '../pages/Cart';
+
+
 const Router = () => (
 
     <BrowserRouter>
@@ -13,6 +16,7 @@ const Router = () => (
                 <Route path="/product/:id" element={<ItemListContainer />} />
                 <Route path="/Contact/" element={<Contact />} />
                 <Route path="/Item/" element={<ItemDetailContainer />} />
+                <Route path='/Cart' element={<Cart />} />
                 { /* Es muy recomendable añadir esta ruta para obtener un mensaje de error en el caso de que la ruta no exista. De lo contrario, si la ruta no existe llegaremos a una página en blanco */}
                 <Route path="*" element={<div>404</div>} />
 
