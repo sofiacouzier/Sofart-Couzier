@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contador from '../ItemListContainer/Contador'
+
+
+
 const ItemDetail = ({ detalle }) => {
     const [count, setCount] = useState(0);
 
