@@ -25,6 +25,7 @@ const ItemDetail = ({ detalle, numero }) => {
             } */}
 
             <button onClick={() => agregarAlCarrito(detalle)}>agregar</button>
+
             <Link to={`/Cart/`}>Comprar</Link>
 
 
