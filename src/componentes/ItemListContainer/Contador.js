@@ -1,5 +1,7 @@
 import React from 'react'
+
 const Contador = ({ Productos, inicio, onAdd }) => {
+
 
     const [valor, setValor] = React.useState(0);
     return (
