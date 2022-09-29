@@ -1,4 +1,6 @@
-Este proyecto tiene como objetivo crear un e commerce para venta de cuadros y obras de arte. El objetivo es crear “cartas” con todos los productos que tengan la opción de ver el detalle del producto y agregarlos al carrito. Más tarde hacer un carrito funcional, un formulario,etc. Todos los avances en el proyecto se dan a partir de las clases de React de coderhouse
+Este proyecto tiene como objetivo crear un e commerce para venta de cuadros y obras de arte. El objetivo es crear “cartas” con todos los productos que tengan la opción de ver el detalle del producto y agregarlos al carrito. Más tarde hacer un carrito funcional, un formulario,etc. Todos los avances en el proyecto se dan a partir de las clases de React de coderhouse.
+Todavia tengo problemas creando el precio final de la compra en el carrito
+
 
 
 

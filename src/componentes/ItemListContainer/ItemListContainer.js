@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import product from './productos'
 import ItemList from './ItemList'
-import { useParams } from 'react-router-dom'
 
 const ItemListContainer = ({ cantidad }) => {
     const getProductos = (confirmacion) => new Promise((res, err) => {
@@ -20,7 +19,6 @@ const ItemListContainer = ({ cantidad }) => {
             .then(productLista => setproductosLista(productLista))
     }, [])
 
-    const { id } = useParams()
 
 
     return (
@@ -29,7 +27,6 @@ const ItemListContainer = ({ cantidad }) => {
             </h2>
 
             <div>
-                <h5>{id} Productos</h5>
                 {productLista && <ItemList productLista={productLista} />}
             </div>
         </div>
