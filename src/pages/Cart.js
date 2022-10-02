@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../app/Provider'
 
@@ -7,14 +7,18 @@ const Cart = () => {
 
     const { removeCarrito } = useContext(AppContext)
 
-
+    const [final, setFinal] = useState(0)
     return (
         <div>
             <h1>Cart</h1>
             <div>
                 Aqui apareceran los productos elegidos
             </div>
-            {carrito.length > 0 ? carrito.map(item => <div key={item.id}><br /><h2 >{item.nombre}</h2> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id)}>eliminar producto</button></div>) : <Link to={'/product/'}>Comenza a comprar!</Link>
+            {carrito.length > 0 ? carrito.map(item => <div key={item.id}><br /><h2 >{item.nombre}</h2> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id)}>eliminar producto</button></div>)
+
+
+                : <Link to={'/product/'}>Comenza a comprar!</Link>
+
             }
 
 

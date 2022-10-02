@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { AppContext } from '../../app/Provider';
 import Contador from '../ItemListContainer/Contador'
-import product from '../ItemListContainer/productos'
+import product from '../ItemListContainer/Productos'
 
 
 const ItemDetail = ({ nombre }) => {
@@ -16,13 +16,19 @@ const ItemDetail = ({ nombre }) => {
 
     const { agregarAlCarrito } = useContext(AppContext)
 
+
+
     return (
         <>
             <Link to={`/Cart/`}>Comprar</Link>
 
             <div>
-                {det.length > -1 ? <h3>{det[0].nombre}</h3> : 'cargando'}
-                <button onClick={() => agregarAlCarrito(det[0])}>agregar</button>
+                {det.length > -1 ? <div> <h3>{det[0].nombre}</h3> <h5>precio: ${det[0].precio}</h5></div> : 'cargando'}
+                <button onClick={() => { agregarAlCarrito(det[0]) }}>agregar</button>
+
+            </div>
+
+            <div>
 
             </div>
 

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import product from './productos'
+import Product from './Productos'
 import ItemList from './ItemList'
 
 const ItemListContainer = ({ cantidad }) => {
     const getProductos = (confirmacion) => new Promise((res, err) => {
         setTimeout(() => {
             if (confirmacion) {
-                res(product)
+                res(Product)
             } else {
                 err("Rechazado")
             }
