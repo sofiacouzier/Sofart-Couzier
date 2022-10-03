@@ -2,16 +2,16 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { AppContext } from '../../app/Provider';
 import Contador from '../ItemListContainer/Contador'
-import product from '../ItemListContainer/Productos'
+import productos from '../ItemListContainer/ItemListContainer'
 
 
 const ItemDetail = ({ nombre }) => {
     const [det, setDet] = useState({})
     let { id } = useParams()
     useEffect(() => {
-        fetch(product)
+        fetch(productos)
             .then((res) => res.json)
-            .then(setDet(product.filter((item) => item.id == id)))
+            .then(setDet(productos.filter((item) => item.id == id)))
     }, [id]);
 
     const { agregarAlCarrito } = useContext(AppContext)

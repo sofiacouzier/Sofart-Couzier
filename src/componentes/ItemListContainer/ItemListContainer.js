@@ -1,33 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import Product from './Productos'
+import { getItems } from '../../app/firebase-api'
 import ItemList from './ItemList'
 
-const ItemListContainer = ({ cantidad }) => {
-    const getProductos = (confirmacion) => new Promise((res, err) => {
-        setTimeout(() => {
-            if (confirmacion) {
-                res(Product)
-            } else {
-                err("Rechazado")
-            }
-        }, 2000)
-    })
+const ItemListContainer = () => {
 
-    const [productLista, setproductosLista] = useState()
+    const [productos, setProductos] = useState()
+
+
     useEffect(() => {
-        getProductos(true)
-            .then(productLista => setproductosLista(productLista))
+        getItems().then(res => setProductos(res))
+
     }, [])
 
 
 
     return (
         <div>
-            <h2 className='info'>Hola, bienvenido! En el dia de hoy contamos con {cantidad} productos a la venta
+            <h2 className='info'>Hola, bienvenido! En el dia de hoy contamos con estos productos a la venta
             </h2>
 
             <div>
-                {productLista && <ItemList productLista={productLista} />}
+                <ItemList productos={productos} />
             </div>
         </div>
     )
