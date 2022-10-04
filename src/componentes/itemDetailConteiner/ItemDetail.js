@@ -1,18 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { AppContext } from '../../app/Provider';
-import Contador from '../ItemListContainer/Contador'
-import productos from '../ItemListContainer/ItemListContainer'
+// import Contador from '../ItemListContainer/Contador'
 
 
-const ItemDetail = ({ nombre }) => {
-    const [det, setDet] = useState({})
+const ItemDetail = ({ detalle }) => {
+    // const [det, setDet] = useState({})
     let { id } = useParams()
-    useEffect(() => {
-        fetch(productos)
-            .then((res) => res.json)
-            .then(setDet(productos.filter((item) => item.id == id)))
-    }, [id]);
+    // useEffect(() => {
+    //     fetch(detalles)
+    //         .then((res) => res.json)
+    //         .then(setDet(detalles.filter((item) => item.id == id)))
+    // }, [id]);
 
     const { agregarAlCarrito } = useContext(AppContext)
 
@@ -23,8 +22,8 @@ const ItemDetail = ({ nombre }) => {
             <Link to={`/Cart/`}>Comprar</Link>
 
             <div>
-                {det.length > -1 ? <div> <h3>{det[0].nombre}</h3> <h5>precio: ${det[0].precio}</h5></div> : 'cargando'}
-                <button onClick={() => { agregarAlCarrito(det[0]) }}>agregar</button>
+                <div> <h3>{detalle.nombre}</h3> <h5>precio: ${detalle.precio}</h5></div>
+                <button onClick={() => { agregarAlCarrito(detalle) }}>agregar</button>
 
             </div>
 
