@@ -32,7 +32,7 @@ export const getItemsByCondition = async (value) => {
 export const getItemById = async (id) => {
     const colRef = collection(db, 'items');
     const result = await getDoc(doc(colRef, id));
-    return result.data();
+    return { ...result.data(), id: result.id };
 }
 
 // DELETE
