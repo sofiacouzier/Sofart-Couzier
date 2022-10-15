@@ -5,6 +5,8 @@ import { AppContext } from '../app/Provider'
 const Cart = () => {
     const { carrito } = useContext(AppContext)
     const { total } = useContext(AppContext)
+
+    //const { totalPrice } = useContext(AppContext)
     const { removeCarrito } = useContext(AppContext)
     const { menos } = useContext(AppContext)
 
@@ -15,8 +17,8 @@ const Cart = () => {
             <div>
                 Aqui apareceran los productos elegidos
             </div>
-            {carrito.length > 0 ? carrito.map(item => <div key={item.id}>
-                <br /><h2 >{item.nombre}</h2> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id) && menos(item.precio)}>eliminar producto</button>
+            {carrito.length > 0 ? carrito.map(item => <div key={item.id}> <h1></h1>
+                <br /><h2 >{item.nombre}</h2><h5>cant: {item.valor}</h5> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id) && menos(item.precio)}>eliminar producto</button>
                 <br></br>
                 <br />
 
@@ -27,10 +29,10 @@ const Cart = () => {
             <br />
             <br />
             <br />
+            <h1>{total}</h1>
 
-            <div>precio total= {total}
-                <Link to={'/Comprar/'}>finalizar compra</Link></div>
-        </div>
+            <Link to={'/Comprar/'}>finalizar compra</Link></div>
+
     )
 }
 

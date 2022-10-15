@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contador = ({ stock, inicio }) => {
+const Contador = ({ stock, inicio, onAdd }) => {
 
 
     const [valor, setValor] = React.useState(0);
@@ -19,7 +19,9 @@ const Contador = ({ stock, inicio }) => {
                 }} disabled={valor > stock - 1}>+</button>
 
             </div >
-
+            <button type="button" onClick={() => { onAdd(valor) }}>
+                Añadir al carrito
+            </button>
         </div >
     )
 }
