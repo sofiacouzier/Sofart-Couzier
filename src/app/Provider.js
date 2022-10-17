@@ -28,11 +28,11 @@ const Provider = ({ children }) => {
     let p = carrito.length
     const productInCart = (id) => carrito.find(product => product.id === id) ? true : false
 
-    const removeCarrito = (id) => setCarrito(carrito.filter(product => product.id !== id));
+    const removeCarrito = (id, valor, precio) => setCarrito(carrito.filter(product => product.id !== id));
     // const totalPrice = () => {
     //   return carrito.reduce((prev, act) => prev + act.valor * act.precio, 0)
     //}
-    const menos = (precio) => setTotal(total - Number(precio));
+    const menos = (precio, valor) => setTotal(total + Number(precio * valor));
 
     return (
         <AppContext.Provider value={{ carrito, setCarrito, agregarAlCarrito, removeCarrito, total, setTotal, menos, productInCart }}>

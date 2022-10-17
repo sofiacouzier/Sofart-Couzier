@@ -12,6 +12,7 @@ const Item = ({ item }) => {
             <h2>
                 {item.nombre}
             </h2>
+            <h5>{item.descripcion}</h5>
             <p>Precio: ${item.precio}</p >
             <p> Disponibles: {item.stock} unidades</p>
 

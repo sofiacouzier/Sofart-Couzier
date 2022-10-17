@@ -18,7 +18,7 @@ const Cart = () => {
                 Aqui apareceran los productos elegidos
             </div>
             {carrito.length > 0 ? carrito.map(item => <div key={item.id}> <h1></h1>
-                <br /><h2 >{item.nombre}</h2><h5>cant: {item.valor}</h5> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id) && menos(item.precio)}>eliminar producto</button>
+                <br /><h2 >{item.nombre}</h2><h5>cant: {item.valor}</h5> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id, item.valor, item.precio) && menos(item.precio, item.valor)}>eliminar producto</button>
                 <br></br>
                 <br />
 
@@ -30,8 +30,11 @@ const Cart = () => {
             <br />
             <br />
             <h1>{total}</h1>
-
             <Link to={'/Comprar/'}>finalizar compra</Link></div>
+
+
+
+
 
     )
 }

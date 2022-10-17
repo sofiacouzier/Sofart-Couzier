@@ -16,7 +16,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            <h2 className='info'>Hola, bienvenido! En el dia de hoy contamos con estos productos a la venta
+            <h2 className='info'>Hola, bienvenido a Sofart! En el dia de hoy contamos con los siguientes productos a la venta
             </h2>
 
             <div>
