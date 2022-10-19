@@ -1,5 +1,6 @@
 SOFART
 sofart es una pagina de e-comerce destinada a la venta de obras de arte
+el gif puede verse en:
 https://youtu.be/6xdEf47t8LA
 
 Enfoque
