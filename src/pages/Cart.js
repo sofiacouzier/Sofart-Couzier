@@ -12,25 +12,22 @@ const Cart = () => {
 
 
     return (
-        <div>
-            <h1>Cart</h1>
-            <div>
-                Aqui apareceran los productos elegidos
-            </div>
-            {carrito.length > 0 ? carrito.map(item => <div key={item.id}> <h1></h1>
-                <br /><h2 >{item.nombre}</h2><h5>cant: {item.valor}</h5> <h5>precio: ${item.precio}</h5><button onClick={() => removeCarrito(item.id, item.valor, item.precio) && menos(item.precio, item.valor)}>eliminar producto</button>
+        <div className='ca'>
+
+            {carrito.length > 0 ? carrito.map(item => <div className='carrit' key={item.id}> <img className='im' src={item.img} /><div className='data'>
+                <br /><h2 >{item.nombre}</h2><h5>cant: {item.valor}</h5> <h5>precio: ${item.precio}</h5></div><button className='btn' onClick={() => removeCarrito(item.id, item.valor, item.precio)} onSubmit={() => menos(item.valor)} >eliminar producto</button>
                 <br></br>
                 <br />
 
             </div>)
 
-                : <Link to={'/product/'}>Comenza a comprar!</Link>
+                : <div className='vacio'> <h4>Tu carrito esta vacio,</h4><Link className='li' to={'/product/'}>Comenza a comprar!</Link></div>
             }
             <br />
             <br />
             <br />
-            <h1>{total}</h1>
-            <Link to={'/Comprar/'}>finalizar compra</Link></div>
+            <h1 className='total'>Precio final: ${total}</h1>
+            <Link className='terminar' to={'/Comprar/'}>finalizar compra</Link></div>
 
 
 

@@ -19,23 +19,26 @@ const ItemDetail = ({ products, }) => {
     }
 
     return (
-        <>
+        <div className='display'>
+            <div className='c'>
+                <img src={products.img} className='imgd' />
+            </div>
 
 
             <div>
-                <div> <h3>{products.nombre}</h3> <h5>precio: ${products.precio}</h5></div>
+                <div> <h3 className='n'>'{products.nombre}'</h3> <h5 className='p'>precio: ${products.precio}</h5> <h5 className='d'> {products.descripcion}</h5></div>
 
-                {/* <button onClick={() => { agregarAlCarrito(products) }}>agregar</button> */}
+                <br />
 
                 <Contador onAdd={onAdd} stock={products.stock} />
-
+                <div>
+                    <h3 ><Link className='link' to={`/Cart/`}>Ir al carrito</Link> </h3>
+                </div>
             </div>
 
-            <div>
-                <Link to={`/Cart/`}>Comprar</Link>
-            </div>
 
-        </>
+
+        </div>
 
 
     )

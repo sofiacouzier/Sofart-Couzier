@@ -20,7 +20,7 @@ const Router = () => (
                     <Route path="/Item/:id" element={<ItemDetailContainer />} />
                     <Route path='/Cart' element={<Cart />} />
                     <Route path='/Comprar' element={<Comprar />} />
-                    { /* Es muy recomendable añadir esta ruta para obtener un mensaje de error en el caso de que la ruta no exista. De lo contrario, si la ruta no existe llegaremos a una página en blanco */}
+                    <Route path="/category/:categoryId" element={<ItemListContainer />} />
                     <Route path="*" element={<div>404</div>} />
 
                 </Route>

@@ -1,12 +1,29 @@
-Este proyecto tiene como objetivo crear un e commerce para venta de cuadros y obras de arte. El objetivo es crear “cartas” con todos los productos que tengan la opción de ver el detalle del producto y agregarlos al carrito. Más tarde hacer un carrito funcional, un formulario,etc. Todos los avances en el proyecto se dan a partir de las clases de React de coderhouse.
-Todavia tengo problemas creando el precio final de la compra en el carrito
+SOFART
+sofart es una pagina de e-comerce destinada a la venta de obras de arte
 
 
 
+Enfoque
+La pagina home tiene una breve introduccion y luego los productos, a los que se puede acceder de manera directa en la pagina de productos
+La pagina contacto indica donde comunicarse con el vendedor y en el carrito se pueden ver los items a comprar
 
+Librerias
 
+React-router-dom
 
+Mediante un npm, para crear rutas fijas y dinámicas, y mostrar un producto con su información correspondiente (tal como la descripción). Por medio de esta librería se utilizan los componentes: useState, useParams, Link, NavLink, Outlet,BrowserRouter, Routes, Route y useEffects.
 
+Boostrap
+ultilizado en el navbar
+
+Proyecto
+
+Este proyecto de e-commerce fue desarrollado durante el curso de React JS de CoderHouse.
+
+Conectado a Firebase, para crear y obtener los datos de cada producto; además de envíar y guardar los datos del comprador y su orden de compra.
+
+Imagenes
+Todas las imagenes son obras propias
 
 
 

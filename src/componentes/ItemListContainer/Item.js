@@ -9,14 +9,16 @@ const Item = ({ item }) => {
 
 
         < div className='prod' id={item.id}>
-            <h2>
+            <h2 className='nombre'>
                 {item.nombre}
             </h2>
-            <h5>{item.descripcion}</h5>
-            <p>Precio: ${item.precio}</p >
-            <p> Disponibles: {item.stock} unidades</p>
+            <img src={item.img} className='img' />
+            <h5 className='desc'> {item.descripcion}</h5>
+            <p> ${item.precio}</p >
+            <h5 className='st'> Disponibles: {item.stock} unidades</h5>
 
-            <Link to={`/Item/${item.id}`}>Ver detalle</Link>
+
+            <Link className='links' to={`/Item/${item.id}`}>Ver detalle</Link>
         </div>
 
 

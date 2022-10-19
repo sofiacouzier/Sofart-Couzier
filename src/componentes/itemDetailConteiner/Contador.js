@@ -11,7 +11,6 @@ const Contador = ({ stock, inicio, onAdd }) => {
                 <button className='sumar' onClick={() => {
                     inicio = 0
                     setValor(valor - 1)
-
                 }} disabled={valor < 1}>-</button>
                 <p className='hola'>{valor}</p>
                 <button className='sumar' onClick={() => {
@@ -19,8 +18,8 @@ const Contador = ({ stock, inicio, onAdd }) => {
                 }} disabled={valor > stock - 1}>+</button>
 
             </div >
-            <button type="button" onClick={() => { onAdd(valor) }}>
-                Añadir al carrito
+            <button className='agg' type="button" onClick={() => { onAdd(valor) }}>
+                añadir al carrito
             </button>
         </div >
     )

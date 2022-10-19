@@ -2,9 +2,12 @@ import React from 'react'
 import NavBar from '../componentes/NavBar/NavBar'
 const Contact = () => {
     return (
-        <div>
-            <h1>
-                Contactanos en instagam! @Sofart
+        <div className='div'>
+            <h1 className='con'>Queremos conocerte!</h1>
+            <h1 className='contact'>
+                Contactanos en instagam:
+            </h1>
+            <h1 className='contacto'> @sofart
             </h1>
         </div>
     )

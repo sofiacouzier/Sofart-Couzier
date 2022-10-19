@@ -1,34 +1,23 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
+
 function NavBar() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" className='nav' variant="dark">
             <Container>
-                <img className='foto' src="../IMG/foto.webp" width={35} alt="" />
+                <img className='foto' src="../IMG/foto.webp" width={30} alt="" />
 
-                <Navbar.Brand href="#home"><Link to='/'>Sofart</Link></Navbar.Brand>
-                <li><Link to={`/product/`}>Productos</Link></li>
-                <li><Link to='/Contact/'>Contacto</Link></li>
+                <Navbar.Brand href="#home"><Link className='linknav' to='/'>SOFART</Link></Navbar.Brand>
+                <li><Link className='linknav' to={`/product/`}>Productos</Link></li>
+                <li><Link className='linknav' to={`/category/retrato/`}>personas</Link></li>
+                <li><Link className='linknav' to={`/category/paisaje/`}>paisajes</Link></li>
+                <li><Link className='linknav' to='/Contact/'>Contacto</Link></li>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                {/* <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#features">Productos</Nav.Link>
-                        <Nav.Link href="#pricing">costumizados</Nav.Link>
-                        <NavDropdown title="Nosotros" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">conocenos</NavDropdown.Item>
 
-                            <NavDropdown.Item href="#action/3.3">contacto</NavDropdown.Item>
-
-                        </NavDropdown>
-                    </Nav>
-                    
-                </Navbar.Collapse> */}
                 <nav>
                     <CartWidget></CartWidget>
 

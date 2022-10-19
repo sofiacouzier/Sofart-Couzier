@@ -3,9 +3,8 @@
     width: 100%;
 }
 
-.info {
-    margin: 20px;
-    margin-top: 35px;
+.nav {
+    background-color: rgb(216, 215, 210);
 }
 
 .botones {
@@ -25,6 +24,17 @@
     color: rgb(137, 135, 141);
 }
 
+.fondo {
+    background-color: rgb(243, 242, 238);
+}
+
+.img {
+    max-height: 270px;
+    max-width: 300px;
+    border-color: black;
+    border-width: 50px;
+}
+
 .foto {
     width: 50px;
     border-radius: 50px;
@@ -32,55 +42,117 @@
 }
 
 .carrito {
-    background-color: aliceblue;
+    background-color: rgb(237, 236, 233);
     padding: 3px;
     margin-right: 3px;
 }
 
 .botonCarrito {
-    background-color: aliceblue;
+    background-color: rgb(237, 236, 233);
     border-radius: 8px;
 }
 
-.carrito:hover {
-    padding: 0;
+.vacio {
+    font-size: 70px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 200px;
+    font-weight: 200;
+    margin-bottom: 200px;
 }
 
-.stock {
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
+.li {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
 }
 
 .sumar {
     margin: 10px;
-    background-color: rgb(73, 72, 72);
-    border-radius: 10px;
-    border-style: groove;
+    background-color: rgb(142, 134, 134);
+    border-radius: 7px;
+    border: 0ch;
     color: aliceblue;
+    width: 35px;
+    height: 35px;
+    font-size: large;
 }
 
 .hola {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
-    text-align: center;
 }
 
 .carritoBoton {
     border-radius: 10px;
 }
 
+.intro {
+    background: white;
+    height: 800px;
+    padding: 100px;
+}
+
+.uno {
+    text-align: center;
+    font-size: 200px;
+    font-weight: lighter;
+    margin-top: 100px;
+    color: rgb(61, 53, 49);
+}
+
+.dos {
+    font-weight: lighter;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.nombre {
+    font-weight: 220;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-weight: 100;
+    font-size: medium;
+    margin: 10px;
+}
+
+.stock {
+    font-weight: 300;
+    font-size: small;
+    margin: 10px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.st {
+    font-weight: 300;
+    font-size: small;
+}
+
 .prod {
-    background-color: rgb(233, 229, 224);
-    width: 200px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
     padding: 10px;
     align-items: center;
     text-align: center;
-    margin: 20px;
+    margin: 35px;
     margin-top: 80px;
     display: inline-block;
     border-radius: 10px;
     border-style: groove;
-    margin-left: 13%;
+}
+
+.home {
+    margin-left: 170px;
+    padding-bottom: 30px;
 }
 
 .detalle {
@@ -94,4 +166,226 @@
 
 .cuadro {
     margin: 10px;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: rgb(249, 247, 247);
+    height: 800px;
+}
+
+.display>img {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.c {
+    background: rgb(255, 255, 255);
+    width: 700px;
+}
+
+.imgd {
+    max-width: 550px;
+    max-height: 660px;
+    margin: 40px;
+    margin-left: 80px;
+}
+
+.det {
+    display: block;
+    height: 100%;
+}
+
+.n {
+    font-size: 90px;
+    margin: 50px;
+    margin-top: 100px;
+    font-weight: initial;
+}
+
+.p {
+    font-size: 30px;
+    margin-left: 190px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.d {
+    font-size: 20px;
+    margin-left: 180px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.agg {
+    background: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    border: 0ch;
+    border-radius: 10px;
+    margin-left: 190px;
+    margin-top: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.agg:hover {
+    background: rgb(220, 217, 217);
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 200;
+    margin-left: 230px;
+
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 200;
+}
+
+
+.total {
+    text-align: center;
+    font-weight: 200;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.terminar {
+    margin-left: 650px;
+    font-weight: 230;
+    text-decoration: none;
+    color: #000;
+}
+
+.carrit {
+    background: rgb(244, 242, 242);
+    padding: 30px;
+    margin: 60px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 250px;
+    width: 900px;
+    margin-left: 250px;
+}
+
+.im {
+    max-width: 150px;
+    max-height: 200px;
+    margin-left: 50px;
+}
+
+.data {
+    width: 500px;
+    padding: 10px;
+}
+
+.data>h2 {
+    font-weight: 200;
+
+}
+
+.data>h2 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.data>h5 {
+    font-weight: 200;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.ca {
+    margin-bottom: 200px;
+}
+
+.comprar {
+    background: rgb(247, 246, 246);
+    margin: 70px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dat {
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.label {
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.tf {
+    font-weight: 100;
+    margin: 50px;
+}
+
+.compra {
+    border-radius: 10px;
+    background: rgb(244, 242, 242);
+    height: 50px;
+    width: 80px;
+    font-weight: 200;
+}
+
+.compra:hover {
+
+    background: rgb(225, 223, 223);
+}
+
+
+.linknav {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.linknav:hover {
+    color: rgb(247, 246, 234);
+}
+
+.contact {
+    font-weight: 100;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.contacto {
+    font-weight: 300;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 30px;
+
+}
+
+.con {
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.div {
+    padding: 50px;
+    margin-top: 130px;
 }

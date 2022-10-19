@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import { getItems } from '../../app/firebase-api'
 import ItemList from './ItemList'
+import { useParams } from 'react-router-dom'
 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
 
+    const { categoryId } = useParams()
 
     useEffect(() => {
-        getItems().then(res => setProductos(res))
-
-    }, [])
+        if (categoryId) {
+            getItems().then(res => setProductos(res.filter((res) => res.category === categoryId)))
+        }
+        else {
+            getItems().then(res => setProductos(res))
+        }
+    }, [categoryId])
 
 
 
     return (
-        <div>
-            <h2 className='info'>Hola, bienvenido a Sofart! En el dia de hoy contamos con los siguientes productos a la venta
-            </h2>
-
-            <div>
+        <div className='fondo'>
+            <div className='home'>
                 <ItemList productos={productos} />
             </div>
         </div>
